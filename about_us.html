@@ -283,6 +283,69 @@
   </div>
 
 
+<div class="bg-gray-50 py-12">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    
+    <!-- Left Content -->
+    <div>
+      <h2 class="text-5xl font-semibold mb-6">Stewardship Services</h2>
+      
+      <!-- Accordion Items -->
+      <div class="space-y-4">
+        <!-- Item 1 -->
+        <div class="border-b pb-4">
+          <button class="w-full flex justify-between items-center text-left text-3xl font-semibold focus:outline-none" onclick="toggleAccordion('loan')">
+            Loan
+            <span class="text-blue-400 text-2xl font-bold">+</span>
+          </button>
+          <div id="loan" class="mt-2 text-gray-600 hidden">
+            <p>
+              Our loan services provide affordable financing options tailored to your needs, with flexible terms and supportive guidance every step of the way.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="border-b pb-4">
+          <button class="w-full flex justify-between items-center text-left text-3xl font-semibold focus:outline-none" onclick="toggleAccordion('investment')">
+            Investment
+            <span class="text-blue-400 text-2xl font-bold">+</span>
+          </button>
+          <div id="investment" class="mt-2 text-gray-600 hidden">
+            <p>
+              Invest in your future with confidence. We offer responsible investment options that help grow your resources while aligning with your values.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="border-b pb-4">
+          <button class="w-full flex justify-between items-center text-left text-3xl font-semibold focus:outline-none" onclick="toggleAccordion('stewardship')">
+            Stewardship
+            <span class="text-blue-400 text-2xl font-bold">+</span>
+          </button>
+          <div id="stewardship" class="mt-2 text-gray-600 hidden">
+            <p>
+              Stewardship is at the heart of our mission. Learn how to manage resources faithfully and effectively through personalized support and education.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex-1 w-full max-w-xl">
+      <img src="https://socialsci.libretexts.org/@api/deki/files/133600/family-taking-selfie-together-with-tablet-home.jpg?revision=1&size=bestfit&width=569&height=380" alt="Family looking at tablet" class="rounded-lg shadow-md w-full max-w-md">
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleAccordion(id) {
+    const section = document.getElementById(id);
+    section.classList.toggle('hidden');
+  }
+</script>
 
 
 <section class="bg-white py-12 px-4">
