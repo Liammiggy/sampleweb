@@ -6,155 +6,158 @@
   <title>Stewardship Hero</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- AOS Animation Library -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
       font-family: 'Nunito', sans-serif;
+    }
 
-}
-.services-section, .why-we-exist-section {
-  max-width: 1280px;
-  margin: 0 auto; /* Center align */
-}
+     .services-section {
+      max-width: 1280px;
+      margin: 0 auto; /* Center align */
+      padding: 0 20px; /* Add some space for mobile devices */
+    }
+
+     .why-we-exist-section {
+      max-width: auto;
+      margin: 0 auto; /* Center align */
+      padding: 0 20px; /* Add some space for mobile devices */
+    }
+    .services-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 40px 0;
+    }
+
+    .service-box {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      padding: 20px;
+      width: calc(33% - 20px);
+      text-align: center;
+      transition: transform 0.3s;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-box img {
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
+    /* Why We Exist Section */
+    .why-we-exist-section {
+      background-color: #f3f3f3; /* Gray Background */
+      background-image: url('https://www.stewardshipassociation.org/wp-content/uploads/2025/02/WhyWeExist.png');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 0;
+      color: white;
+    }
+
+    .content-wrapper {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    /* Adjust Image */
+    .why-image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .why-image {
+      flex: 1;
+      min-width: 300px;
+      padding: 10px;
+    }
+
+    .why-text {
+      flex: 1;
+      min-width: 300px;
+      padding: 10px 30px;
+      color:  #1F2937;
+    }
+
+    .why-text h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .why-text h2 span {
+      color: #0056B3;
+    }
+
+    .why-text p {
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+
+    /* Button Styling */
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn-primary, .btn-outline {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background-color: #ffb800;
+      color: #000;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 1px solid #ffb800;
+      color: #000;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      
 .services-section {
-  max-width: 1280px;  /* Set max width */
-  margin: 0 auto;     /* Center content */
-  padding: 40px 20px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.why-image, .why-text {
-  padding: 20px;
-}
-
-.service-box {
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  padding: 20px;
-  width: 300px;
-  text-align: center;
-  transition: transform 0.3s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-.service-box img {
-  height: 60px;
-  margin-bottom: 15px;
-}
-
-.service-box:hover {
-  transform: translateY(-5px);
-}
-
-./* Why We Exist Section */
-.why-we-exist-section {
-  background-color: #f9f9f9; /* Gray background */
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.why-we-exist-section .content-wrapper {
-  max-width: 1280px;  /* Ensure content is 1280px wide */
-  margin: 0 auto;     /* Center content */
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-/* Adjust Image */
-.why-image img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.why-image {
-  flex: 1;
-  min-width: 300px;
-  padding: 10px;
-}
-
-.why-text {
-  flex: 1;
-  min-width: 300px;
-  padding: 10px 30px;
-}
-
-.why-text h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.why-text h2 span {
-  color: #0056b3;
-}
-
-.why-text p {
-  font-size: 1rem;
-  margin-bottom: 25px;
-}
-
-/* Button Styling */
-.buttons {
-  display: flex;
-  gap: 15px;
-}
-
-.btn-primary, .btn-outline {
-  padding: 10px 20px;
-  font-size: 0.9rem;
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
-}
-
-.btn-primary {
-  background-color: #ffb800;
-  color: #000;
-}
-
-.btn-outline {
-  background-color: transparent;
-  border: 1px solid #ffb800;
-  color: #000;
-}
-
-@media (max-width: 768px) {
-  .why-we-exist-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn-primary, .btn-outline {
-    width: 80%;
-  }
-}
-
-   
-
-    @media (max-width: 1000px) and (min-width: 700px) {
-      .tablet\:hidden {
-        display: none !important;
+        flex-direction: column;
+        align-items: center;
       }
-      .tablet\:flex {
-        display: flex !important;
+
+      .service-box {
+        width: 80%; /* Adjust width for mobile */
+        margin-bottom: 20px;
       }
-      .tablet\:block {
-        display: block !important;
+      .why-we-exist-section {
+        padding: 40px 20px;
+      }
+
+      .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn-primary, .btn-outline {
+        width: 80%;
       }
     }
   </style>
@@ -222,46 +225,40 @@
       </button>
     </div>
   </section>
-
-
-
-
-
+    <!-- servises Section -->
 <div class="services-section">
-  <div class="service-box" data-aos="zoom-in">
-    <img src="icon1.png" alt="Education Icon">
-    <h3>Education Funds</h3>
-    <p>Provide financial assistance for educational needs and opportunities.</p>
-  </div>
-  <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
-    <img src="icon2.png" alt="Contributions Icon">
-    <h3>Funds Contributions</h3>
-    <p>Helps church & communities grow and manage collective funds for needs and emergencies.</p>
-  </div>
-  <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
-    <img src="icon3.png" alt="Savings Icon">
-    <h3>Financial Savings</h3>
-    <p>Efficiently collect and distribute alms and funds for different purposes.</p>
-  </div>
-</div>
-
-<!-- Why We Exist Section -->
-<div class="why-we-exist-section">
-  <div class="content-wrapper">
-    <div class="why-image" data-aos="fade-right">
-      <img src="https://www.stewardshipassociation.org/wp-content/uploads/2025/02/WhyWeExistimage.png" alt="Giving Gift">
+    <div class="service-box" data-aos="zoom-in">
+      <img src="icon1.png" alt="Education Icon">
+      <h3>Education Funds</h3>
+      <p>Provide financial assistance for educational needs and opportunities.</p>
     </div>
-    <div class="why-text" data-aos="fade-left">
-      <h2>Why We Exist -<br><span>To serve Churches</span></h2>
-      <p>We exist to bridge the gap between need and generosity within church communities. Our goal is to make it easier for churches to respond to both crises and celebrations, ensuring that no member feels unsupported during critical moments in their lives.</p>
-      <div class="buttons">
-        <button class="btn-primary">INVEST NOW</button>
-        <button class="btn-outline">REQUEST MORE INFO</button>
+    <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
+      <img src="icon2.png" alt="Contributions Icon">
+      <h3>Funds Contributions</h3>
+      <p>Helps church & communities grow and manage collective funds for needs and emergencies.</p>
+    </div>
+    <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
+      <img src="icon3.png" alt="Savings Icon">
+      <h3>Financial Savings</h3>
+      <p>Efficiently collect and distribute alms and funds for different purposes.</p>
+    </div>
+  </div>
+  <!-- Why We Exist Section -->
+  <div class="why-we-exist-section">
+    <div class="content-wrapper">
+      <div class="why-image" data-aos="fade-right">
+        <img src="https://www.stewardshipassociation.org/wp-content/uploads/2025/02/WhyWeExistimage.png" alt="Giving Gift">
+      </div>
+      <div class="why-text" data-aos="fade-left">
+        <h2>Why We Exist -<br><span>To serve Churches</span></h2>
+        <p>We exist to bridge the gap between need and generosity within church communities. Our goal is to make it easier for churches to respond to both crises and celebrations, ensuring that no member feels unsupported during critical moments in their lives.</p>
+        <div class="buttons">
+          <button class="btn-primary">INVEST NOW</button>
+          <button class="btn-outline">REQUEST MORE INFO</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
 
   <script>
     document.getElementById('menu-toggle').addEventListener('click', function () {
@@ -270,14 +267,13 @@
     });
   </script>
 
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true
-  });
-</script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 
 </body>
 </html>
