@@ -11,9 +11,13 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+
+ 
     body {
       font-family: 'Nunito', sans-serif;
+
     }
+
 
      .services-section {
       max-width: 1280px;
@@ -39,9 +43,17 @@
       text-align: left;
      }
 
+       .services-section p
+     {
+
+       font-size: 18px;
+     }
+
+
           .services-section h3
      {
-      margin-top: 30px;
+      margin-top: 40px;
+      margin-bottom: 10px;
       font-size: 20px;
       font-weight: bold;
      }
@@ -126,7 +138,7 @@
     }
 
     .why-text p {
-      font-size: 1rem;
+      font-size: 18px;
       margin-bottom: 25px;
     }
 
@@ -291,7 +303,65 @@
 
 
 
-  <!-- Why We Exist Section -->
+
+<section class="bg-white py-12 px-4">
+  <!-- Container with max width -->
+  <div class="max-w-[1280px] mx-auto">
+    <!-- Heading -->
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-5xl font-bold space-x-2">
+        <span>Invest</span>
+        <span class="text-yellow-500">- Grow Funds -</span>
+        <span class="text-black">Impact Lives</span>
+      </h2>
+    </div>
+
+    <!-- 3 Info Cards -->
+    <div class="grid gap-6 md:grid-cols-3 mb-10">
+      <!-- Card 1 -->
+      <div class="border rounded-lg p-5 shadow-sm hover:shadow-md transition">
+        <h3 style="font-size: 25px;" class="font-bold text-lg mb-3">Invest with purpose</h3>
+        <img src="https://onemoneyway.com/wp-content/uploads/2024/08/iStock-1353602218-768x512-1.jpg" class="mb-3 rounded-md">
+        <p style="font-size: 16px;" class="text-sm text-gray-700">
+          Contribute to collective funds that support community-driven initiatives and personal growth.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="border rounded-lg p-5 shadow-sm hover:shadow-md transition">
+        <h3 style="font-size: 25px;" class="font-bold text-lg mb-3">Earn compative interest</h3>
+        <img src="https://cdn.mos.cms.futurecdn.net/a26vVEtSJBDzXPf4SNpoU6.jpg" class="mb-3 rounded-md">
+        <p style="font-size: 16px;"class="text-sm text-gray-700">
+          Watch your contributions multiply through effective management and sustainable practices.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="border rounded-lg p-5 shadow-sm hover:shadow-md transition">
+        <h3 style="font-size: 25px;" class="font-bold text-lg mb-3">Join an investor community</h3>
+        <img src="https://img.money.co.uk/t014ej9w3ur1/54DSAjnuiHtNBdFNHlbOBc/38402f6da69b65eedce4f151c04ab20e/shutterstock_2107905911.jpg?auto=format%2Ccompress&q=45&ixlib=react-9.8.1" alt="Join an investor community" class="mb-3 rounded-md">
+        <p style="font-size: 16px;"class="text-sm text-gray-700">
+          Make a meaningful difference by supporting members in times of need and celebration.
+        </p>
+      </div>
+    </div>
+
+    <!-- CTA Button Section -->
+    <div>
+      <div class="bg-yellow-500 flex flex-col md:flex-row justify-between items-center px-6 py-4 rounded-md gap-4">
+       <p class="font-bold text-center md:text-left text-black text-lg md:text-xxl" style="font-size: 30px;">
+          Put your savings and retirement to work
+        </p>
+        <button class="bg-white text-black text-sm font-semibold px-5 py-1.5 rounded-full flex items-center gap-2 hover:bg-gray-100 transition w-30">
+          INVEST <span class="text-lg">↗</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Why We Exist Section-reverse -->
   <div class="why-we-exist-section-reverse">
     <div class="content-wrapper-reverse" >
       <div class="why-image" data-aos="fade-right">
@@ -346,7 +416,7 @@
       <div class="flex-1 ">
         <div class="mb-8">
           <div class="bg-yellow-500 text-black flex justify-between items-center px-4 py-3 rounded-md">
-            <p class="font-medium">Put your savings and retirement to work</p>
+            <p style="font-size: 20px"; class="font-bold">Put your savings and retirement to work</p>
             <button class="flex items-center bg-white text-black px-4 py-1 rounded-full hover:bg-gray-100">
               INVEST
               <span class="ml-2">↗</span>
