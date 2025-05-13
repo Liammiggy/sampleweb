@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stewardship Hero</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.stewardshipassociation.org/wp-content/uploads/2025/02/HeaderLogo.png">
   <!-- AOS Animation Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -65,7 +66,7 @@
       transform: translateY(-5px);
     }
     /* Why We Exist Section */
-    .why-we-exist-section {
+    .why-we-exist-section, .why-we-exist-section-reverse{
       background-color: #f3f3f3; /* Gray Background */
       background-image: url('https://www.stewardshipassociation.org/wp-content/uploads/2025/02/WhyWeExist.png');
       background-size: cover;
@@ -74,10 +75,22 @@
       color: white;
     }
 
+
+
     .content-wrapper {
       max-width: 1280px;
       margin: 0 auto;
       display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+     .content-wrapper-reverse {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row-reverse;
       align-items: center;
       gap: 20px;
       justify-content: space-between;
@@ -159,6 +172,10 @@
       }
 
       .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+      .content-wrapper-reverse {
         flex-direction: column;
         text-align: center;
       }
@@ -275,13 +292,13 @@
 
 
   <!-- Why We Exist Section -->
-  <div class="why-we-exist-section">
-    <div class="content-wrapper" style="flex-direction: row-reverse;">
+  <div class="why-we-exist-section-reverse">
+    <div class="content-wrapper-reverse" >
       <div class="why-image" data-aos="fade-right">
         <img src="https://neyssalee.com/wp-content/uploads/2023/06/Seattle_snoqualmie_family_photographer_neyssa_lee__3289-scaled.jpg" alt="Giving Gift">
       </div>
       <div class="why-text" data-aos="fade-left">
-        <h2>Why We Exist -<br><span>To serve Churches</span></h2>
+        <h2>Impact Lives -<br><span>To serve Churches</span></h2>
         <p>We exist to bridge the gap between need and generosity within church communities. Our goal is to make it easier for churches to respond to both crises and celebrations, ensuring that no member feels unsupported during critical moments in their lives.</p>
         <div class="buttons">
           <button class="btn-primary">INVEST NOW</button>
@@ -292,6 +309,83 @@
   </div>
 
 
+<footer class="bg-white text-sm text-gray-700 border-t">
+  <div class="max-w-[1280px] mx-auto px-4 py-10">
+    <div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-20">
+      <!-- Left side: Logo and Contact Info -->
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-2">
+          <img src="https://www.stewardshipassociation.org/wp-content/uploads/2025/02/HeaderLogo.png" alt="Stewardship Logo" class="w-10 h-10" />
+          <span class="font-bold text-blue-800 text-lg">STEWARDSHIP</span>
+        </div>
+        <div>
+          <p class="font-semibold">Phone</p>
+          <a href="tel:+639456379523" class="text-blue-700 hover:underline">+63 945 637+9523</a>
+        </div>
+        <div>
+          <p class="font-semibold">Email</p>
+          <a href="mailto:stewardship@gmail.com" class="text-blue-700 hover:underline">stewardship@gmail.com</a>
+        </div>
+        <div>
+          <p class="font-semibold">Address</p>
+          <p>Bogo City, Cebu, 6010</p>
+          <p class="text-blue-700">Philippines</p>
+        </div>
+      </div>
+
+      <!-- Right side: Links and CTA -->
+      <div class="flex-1 ">
+        <div class="mb-8">
+          <div class="bg-yellow-500 text-black flex justify-between items-center px-4 py-3 rounded-md">
+            <p class="font-medium">Put your savings and retirement to work</p>
+            <button class="flex items-center bg-white text-black px-4 py-1 rounded-full hover:bg-gray-100">
+              INVEST
+              <span class="ml-2">↗</span>
+            </button>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+          <div>
+            <h4 class="font-semibold mb-2">Investment</h4>
+            <ul class="space-y-1">
+              <li><a href="#" class="hover:underline">Investment</a></li>
+              <li><a href="#" class="hover:underline">Forms & Docs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Savings</h4>
+            <ul class="space-y-1">
+              <li><a href="#" class="hover:underline">Savings</a></li>
+              <li><a href="#" class="hover:underline">Education</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Stewardship</h4>
+            <ul class="space-y-1">
+              <li><a href="#" class="hover:underline">Giving Funds</a></li>
+              <li><a href="#" class="hover:underline">Legacy Planning</a></li>
+              <li><a href="#" class="hover:underline">Capital Campaigns</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">About</h4>
+            <ul class="space-y-1">
+              <li><a href="#" class="hover:underline">Meet our team</a></li>
+              <li><a href="#" class="hover:underline">Annual report</a></li>
+              <li><a href="#" class="hover:underline">Success Stories</a></li>
+              <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="mt-10 border-t pt-4 text-center text-xs text-gray-600">
+      All rights @ stewardship 2025 – organization
+    </div>
+  </div>
+</footer>
 
   <script>
     document.getElementById('menu-toggle').addEventListener('click', function () {
